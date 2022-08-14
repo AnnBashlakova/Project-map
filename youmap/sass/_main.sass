@@ -1,0 +1,53 @@
+
+.accordeon-answer_container
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+.accordion 
+    width: 650px;
+    max-height: 100%;
+    padding: 30px;
+    margin-inline: 20px;
+    background: white;
+    border-radius: 20px;
+
+.accordion__content 
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 10px;
+
+
+.question 
+    display: flex;
+    justify-content: space-between
+    cursor: pointer;
+    user-select: none;
+    transition: font-size 0.3s;
+
+.question::after 
+    margin-left: 10px;
+    content: "+";
+    transition: 0.3s;
+
+.answer 
+    height: 0;
+    color: #666;
+    // overflow: hidden;
+    transition: 0.3s;
+
+/* ========================CSS for JS */
+
+.accordion__content.active .answer 
+    height: 80px;
+
+.accordion__content.active .question 
+    font-size: 18px;
+
+.accordion__content.active .question::after 
+    transform: rotate(180deg);
+    content: "-";
+

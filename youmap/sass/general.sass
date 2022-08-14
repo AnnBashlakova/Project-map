@@ -1,0 +1,255 @@
+@import _resets
+@import _fonts
+@import _variables
+// @import _main
+
+body
+    margin: 0 auto
+    background-color: $black
+    font-family: 'Golos Text' 
+
+.header__wrapper
+    max-width: 1440px
+    margin: auto
+    border: 1px solid red
+    border-radius: 20px
+    display: flex
+    justify-content: center
+
+.wrapper
+    max-width: 1440px
+    margin: auto
+    border: 1px solid red
+    border-radius: 20px
+
+
+//header
+
+
+.navigation
+    position: fixed
+    top: 20px
+    z-index: 200
+    font-family: 'Golos Text' 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 175px
+    border-radius: 28px
+    background: $color-header
+    padding: 20px
+    
+
+.nav-menu
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    align-items: center
+    color: $white
+    font-size: 16px
+
+
+.nav-menu__item_deviders
+    margin: 0 12px
+    display: block
+    height: 24px
+    width: 2px
+    background-color: rgba(255, 255, 255, 0.08)
+
+.nav-request
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 32px
+    font-size: 16px
+    color: $white
+.btn
+    display: block
+    font-size: 16px
+    height: 44px
+    border-radius: 14px
+    color: $white
+    
+
+.btn__open-map
+    width: 165px
+    background-color: $blue-btn
+
+
+//main
+.btn_open_constructor
+    width: 244px
+    height: 55px
+    margin: 30px 0 30px 0
+.main
+    margin-top: -100px
+    z-index: 1
+    z-index: 1
+
+
+//sections
+.main-information
+    padding-top: 374px
+    padding-bottom: 100px
+    width: 100%
+
+.main-information_item
+    padding-left: 160px
+.first-block
+    position: relative
+    padding-bottom: 490px
+
+// ellipses
+.ellips_first-section
+    position: absolute
+    transform: translate(-30%, -40%)
+    z-index: 0
+
+
+.slider-text__container
+    width: 600px;
+    height: 100px;
+    margin-top: 5px
+    // margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    // border: 3px solid red
+
+.slider-text__item
+    // z-index: 5
+    // background-color: $black
+    position: absolute;
+    // top: 160px;
+    width: 600px;
+    height: 100px;
+    transition: 3s;
+.slider-text__item:nth-of-type(1) 
+    top: 0;
+    // z-index: 10;
+    transition: 3;
+
+
+// .slider-text__item:nth-of-type(2) 
+//     // top: 0;
+//     opacity: 0
+//     // transition: 2s;
+// .slider-text__item:nth-of-type(3) 
+//     // top: 0;
+//     opacity: 0
+//     // transition: 2s;
+// .slider-text__item:nth-of-type(4) 
+//     // top: 0;
+//     opacity: 0
+//     // transition: 2s;
+.first-block__title
+    display: flex
+    flex-direction: column
+.title_block
+    z-index: 10
+
+.title_block, .slider-text__item
+    font-size: 80px
+    font-weight: 700
+    color: $white
+
+.title-descr__first-block
+    position: relative
+    z-index: 100
+    padding-top: 4px
+    width: 44%
+.title-descr
+    z-index: 100
+    line-height: 30px
+    font-size: 20px
+    color: rgba(234, 234, 234, 1)
+.apps_icon
+    padding-top: 30px
+    display: flex
+    gap: 10px
+.app_apple_link
+    display: block
+    width: 164px
+    height: 56px
+    background-color: $social-link
+    border-radius: 16px
+    text-align: center
+
+.img_apps_icons
+    transform: translateY(28%)
+.img_goole_icons
+    transform: translateY(30%)
+
+.app_google_link
+    display: block
+    width: 183px
+    height: 56px
+    background-color: $social-link
+    border-radius: 16px
+    text-align: center
+.qr_code_link
+    display: block
+    width: 56px
+    height: 56px
+    background-color: $social-link
+    border-radius: 16px
+    text-align: center
+.img_qr_link
+    transform: translateY(37%)
+.stick
+    position: fixed
+    transform: translate(210%, -66%)
+.position
+    position: absolute
+    transform: translate(210%, 250%);
+    
+.secondary-block
+    padding-bottom: 522px
+.secondary-block-three
+    padding-bottom: 311px
+.secondary-block__title
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0em;
+    color: $white
+.secondary-block__title-one
+    width: 50%
+.secondary-block_title-descr
+    padding-top: 20px
+    color: rgba(255, 255, 255, 0.85);
+.secondary-block_title-descr-one
+    width: 30%
+.secondary-block_title-descr-two
+    width: 44%
+
+
+
+
+// section made-maps
+.made-maps
+
+
+.section__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 72px
+
+.section__wrapper_made-maps
+    padding-top: 60px
+    background-color: rgba(255, 255, 255, 0.02)
+    border: 3px solid rgba(255, 255, 255, 0.04)
+    width: 80%
+    margin: auto
+    border-radius: 48px
+.section__title
+    font-size: 48px
+    font-weight: 700
+    color: $white
+    text-align: center
+
+.section__title_made-maps
+    width: 50%
+
+.btn_open_constructor
+    background-color: $blue-btn
