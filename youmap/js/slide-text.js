@@ -2,7 +2,6 @@
 const post = document.getElementsByClassName("slider-text__item");
 const p = post.length;
 let i = 0;
-
 setInterval(next, 2000);
 
 post[0].style = "opacity:1";
@@ -10,30 +9,32 @@ post[1].style = "opacity:0";
 post[2].style = "opacity:0";
 post[3].style = "opacity:0";
 post[4].style = "opacity:0";
+
+
 function next() {
     if (i === 0) {
     post[i + 1].style = "top:-100px;z-index:1;opacity:0";
     
     post[p - 1].style = "top:100px;z-index:1;opacity:0";
 
-    post[i].style = "top:0;z-index:4";
+    post[i].style = "top:0;z-index:3";
     
     i++;
     } else if (i > 0 && i < p - 1) {
     post[i - 1].style = "top:100px;z-index:1;opacity:0";
-    
+    post[i + 1].style = "top:-100px;z-index:1;opacity:0";
 
     post[i].style = "top:0;z-index:3";
     
 
-    post[i + 1].style = "top:-100px;z-index:1;opacity:0";
+    
     
     i++;
     } else if (i === p - 1) {
-    post[i - 1].style = "top:100px;z-index:0;opacity:0";
+    post[i - 1].style = "top:100px;z-index:1;opacity:0";
     
 
-    post[i].style = "top:0;z-index:0";
+    post[i].style = "top:0;z-index:3";
     
 
     i = 0;
@@ -42,7 +43,6 @@ function next() {
     
     }
 }
-
 
 
 
