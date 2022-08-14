@@ -2,7 +2,7 @@
 const post = document.getElementsByClassName("slider-text__item");
 const p = post.length;
 let i = 0;
-setInterval(next, 2000);
+setInterval(next, 1500);
 
 // post[0].style = "opacity:1";
 // post[1].style = "opacity:0";
