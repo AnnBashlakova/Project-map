@@ -2,23 +2,23 @@
 slider()
 
 async function slider() {
-    let i = 0
-    const posts = document.querySelectorAll('.slider-text__item')
-    posts.forEach(t => t.style = 'top:-100px; pacity:0; transition: 0s')
+    let i = 0;
+    const posts = document.querySelectorAll('.slider-text__item');
+    posts.forEach(t => t.style = 'top:-100px; pacity:0; transition: 0s');
     posts[0].style = "top:0px; opacity:1; transition: 0s";
     
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 2000));
     
     while(true) {
-        const next = (i + 1) % posts.length
+        const next = (i + 1) % posts.length;
         
         posts[i].style = "top:100px; opacity:0";
         posts[next].style = "top:0px; opacity:1";
         
-        await new Promise(resolve => setTimeout(resolve, 2000))
+        await new Promise(resolve => setTimeout(resolve, 2000));
         posts[i].style = "top:-100px; opacity:0; transition: 0s";
         
-        i = next
+        i = next;
         
     }
 }

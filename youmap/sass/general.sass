@@ -231,6 +231,7 @@ body
 
 // section made-maps
 .made-maps
+    // margin-bottom: 60px
     // display: none
 
 .section__wrapper
@@ -257,3 +258,284 @@ body
 
 .btn_open_constructor
     background-color: $blue-btn
+
+
+
+//section why-choose
+.why-choose
+    margin-top: 96px
+.section__wrapper_why-choose
+    overflow: hidden
+    padding-top: 60px
+    background-color: rgba(255, 255, 255, 0.02)
+    border: 3px solid rgba(255, 255, 255, 0.04)
+    width: 100%
+    margin: auto
+    border-radius: 48px
+//     display: flex
+//     flex-direction: column
+//     align-items: center
+.section__title_made-maps_why-choose
+    font-size: 56px
+    font-weight: 700
+    text-align: center
+    padding-top: 60px
+    padding-bottom: 57px
+.animation-cards__container
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    padding-bottom: 84px
+// .animation_card
+//     width: 418px
+.animation-card_img
+    height: 254px
+    width: 100%
+.animation-card_img-one
+    background-image: url('../assets/images/bg/animation-bg-one.png');
+    background-position: center
+    background-repeat: no-repeat;
+.animation-card_img-two
+    background-image: url('../assets/images/bg/animation-bg-two.png');
+    background-position: center
+    background-repeat: no-repeat;
+.animation-card_img-three
+    background-image: url('../assets/images/bg/animation-bg-three.png');
+    background-position: center
+    background-repeat: no-repeat;
+.animation-card_title
+    margin-top: 20px
+    margin-bottom: 12px
+    text-align: left
+    font-size: 26px
+    color: $white
+    font-weight: 600
+.animation-card_description
+    width: 95%
+    font-size: 20px
+    color: $white
+    font-weight: 400
+    line-height: 30px
+
+.section__title_block_helps
+    padding-top: 40px
+    padding-bottom: 50px
+    font-size: 50px
+    font-weight: 700
+
+
+//Infinity animation
+@keyframes infinityAnimation 
+    0%
+        transform: translate(0);
+    
+    100%
+        transform: translate(calc(0px - var(--itemWidth)))
+    
+
+@keyframes infinityAnimation_revers
+    0%
+        transform: translate(calc(0px - var(--itemWidth)))
+    
+    100%
+        transform: translate(0);
+    
+.animation_wrapper
+    width: 112%
+    overflow: hidden;
+    // border: 1px solid;
+    --itemWidth: 39%;
+
+
+.text_wrapper
+    display: flex;
+    padding-bottom: 20px
+    
+
+
+.text_wrapper_one
+    animation: infinityAnimation 20s linear infinite
+
+.text_wrapper_two
+    animation: infinityAnimation_revers 20s cubic-bezier(0.11,.084,.81,0.11) infinite
+
+.text_wrapper_three
+    animation: infinityAnimation 16s ease-in-out infinite
+.text_wrapper_four
+    animation: infinityAnimation_revers 16s ease-in-out infinite
+
+.text_item
+    color: $white
+    text-align: center
+    flex-shrink: 0;
+    padding: 28px 20px
+    margin: 0 20px
+    border-radius: 24px
+    width: var(--itemWidth);
+    font-weight: 400
+    font-size: 22px
+    border: 1px solid
+    align-items: center
+.text_item_one:nth-child(2n+1)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+.text_item_one:nth-child(2n+2)
+    border-color: $green-boder
+    background-color: $green-text-item
+.text_item_one:nth-child(3)
+    border-color: $pink-boder  
+    background-color: $pink-text-item
+
+.text_item_two:nth-child(2n+1)
+    border-color: $pink-boder
+    background-color: $pink-text-item
+.text_item_two:nth-child(2n+2)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+.text_item_two:nth-child(3)
+    border-color: $green-boder
+    background-color: $green-text-item
+
+.text_item_three:nth-child(2n+1)
+    border-color: $green-boder
+    background-color: $green-text-item
+.text_item_three:nth-child(2n+2)
+    border-color: $pink-boder
+    background-color: $pink-text-item
+.text_item_three:nth-child(3)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+
+
+//projects
+.section__title_projects
+    z-index: 100
+    font-size: 56px
+    font-weight: 700
+    text-align: center
+    padding-top: 110px
+    padding-bottom: 57px
+
+
+//carousel-slider
+.projects__container
+    position: relative
+    padding-bottom: 96px
+    z-index: 100
+//ellipse
+
+.ellips__project-container
+    position: absolute
+    z-index: 0
+    transform: translate(-14%, -73%)
+.projects__slider
+    display: flex
+    gap: 20px
+
+.project__carousel
+    z-index: 100
+    position: relative
+    width: 638px
+    height: 406px
+    border-radius: 26px
+    background-color: rgba(24, 25, 27, 0.6)
+
+.carousel_track-container
+    overflow: hidden
+    width: 100%
+    height: 100%
+
+
+.carousel_track 
+    position: relative
+    width: inherit
+    height: inherit
+    margin: 0
+    padding: 0
+    list-style: none
+
+
+.carousel_slide,
+    .carousel_image 
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: 0
+    padding: 0
+
+
+.carousel_slide 
+    // padding: 5% 12% 8%;
+    text-align: center
+    transform: translateX(-100%)
+    transition: transform .3s ease-out
+
+
+.carousel_slide.is-selected 
+    transform: translateX(0)
+
+
+.carousel_slide.is-selected ~ .carousel_slide 
+    transform: translateX(100%)
+
+
+.carousel_image 
+    z-index: -1;
+
+
+
+.carousel_image > img 
+    // display: block;
+    width: 94%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 26px
+
+
+.carousel_title
+    padding-top: 28px
+    padding-bottom: 28px
+    font-size: 28px;
+    font-weight: 500
+    color: #fff;
+    text-align: left
+    padding-left: 50px
+
+
+.carousel_btn,
+.carousel_dot 
+    z-index: 1;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+
+
+.carousel_btn 
+    position: absolute
+    top: 52%
+    background-color:  rgba(42, 48, 57, 1)
+    // transform: translateY(-30%);
+    width: 48px
+    height: 48px
+    border-radius: 12px
+
+
+.carousel_btn > * 
+    pointer-events: none;
+
+
+// .carousel_btn:hover svg 
+//     fill: var(--color-active-state);
+
+.jsPrev 
+    left: 50px
+
+.jsNext 
+    right: 50px
+
+.jsPrev
+    transform: rotate(-180deg)
