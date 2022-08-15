@@ -102,7 +102,7 @@ body
 // ellipses
 .ellips_first-section
     position: absolute
-    transform: translate(-50%, -80%)
+    transform: translate(-48%, -57%)
     z-index: 0
 .ellips_first-section-group
     position: absolute
@@ -111,18 +111,13 @@ body
 .slider-text__container
     width: 600px;
     height: 100px;
-    margin-top: 5px
+    // margin-top: 5px
     // margin: 100px auto;
     position: relative;
     overflow: hidden;
     // border: 3px solid red
 .slider-text__item
-    // z-index: 5
-    // background-color: $black
-    // background: rgba(33, 119, 247, 0.5);
-
     position: absolute;
-    // top: 160px;
     width: 478px;
     height: 100px;
     transition: 2s;
@@ -132,19 +127,6 @@ body
     transition: 1.7s;
     transition-timing-function: ease-in-out;
 
-
-// .slider-text__item:nth-of-type(2) 
-//     // top: 0;
-//     opacity: 0
-//     // transition: 2s;
-// .slider-text__item:nth-of-type(3) 
-//     // top: 0;
-//     opacity: 0
-//     // transition: 2s;
-// .slider-text__item:nth-of-type(4) 
-//     // top: 0;
-//     opacity: 0
-//     // transition: 2s;
 .first-block__title
     display: flex
     flex-direction: column
@@ -159,7 +141,7 @@ body
 .title-descr__first-block
     position: relative
     z-index: 100
-    padding-top: 4px
+    padding-top: 11px
     width: 44%
 .title-descr
     z-index: 100
@@ -200,14 +182,32 @@ body
 .img_qr_link
     transform: translateY(37%)
 .stick
+    z-index: 100
     position: fixed
     transform: translate(210%, -66%)
 .position
+    z-index: 100
     position: absolute
     transform: translate(210%, 250%);
     
 .secondary-block
     padding-bottom: 522px
+.secondary-block__content-one, .econdary-block__content-three, .secondary-block__content-two
+    position: relative
+
+//ellipse
+.ellips__secondary-block-one, .ellips__secondary-block-three, .ellips__secondary-block-two
+    position: absolute
+    z-index: 0
+.ellips__secondary-block-one
+    transform: translate(25%, -37%)
+.ellips__secondary-block-two
+    transform: translate(25%, -35%)
+.ellips__secondary-block-three
+    transform: translate(25%, -35%)
+
+//
+
 .secondary-block-three
     padding-bottom: 311px
 .secondary-block__title
@@ -231,7 +231,7 @@ body
 
 // section made-maps
 .made-maps
-    display: none
+    // display: none
 
 .section__wrapper
     display: flex
@@ -243,7 +243,7 @@ body
     padding-top: 60px
     background-color: rgba(255, 255, 255, 0.02)
     border: 3px solid rgba(255, 255, 255, 0.04)
-    width: 80%
+    width: 90%
     margin: auto
     border-radius: 48px
 .section__title
