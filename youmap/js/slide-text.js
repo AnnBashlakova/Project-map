@@ -1,43 +1,27 @@
 
-const post = document.getElementsByClassName("slider-text__item");
-const p = post.length;
-let i = 0;
-setInterval(next, 1700);
+slider()
 
-// post[0].style = "opacity:1";
-// post[1].style = "opacity:0";
-// post[2].style = "opacity:0";
-// post[3].style = "opacity:0";
-// post[4].style = "opacity:0";
-
-
-function next() {
-    if (i === 0) {
-    post[i + 1].style = "top:-100px;z-index:1;opacity:0";
+async function slider() {
+    let i = 0
+    const posts = document.querySelectorAll('.slider-text__item')
+    posts.forEach(t => t.style = 'top:-100px; pacity:0; transition: 0s')
+    posts[0].style = "top:0px; opacity:1; transition: 0s";
     
-    post[p - 1].style = "top:100px;z-index:1;opacity:0";
-
-    post[i].style = "top:0;z-index:3";
-    i++;
-
-    } else if (i > 0 && i < p - 1) {
-    post[i - 1].style = "top:100px;z-index:1;opacity:0";
-    post[i + 1].style = "top:-100px;z-index:1;opacity:0";
-
-    post[i].style = "top:0;z-index:3";
-
-    i++;
-    } else if (i === p - 1) {
-    post[i - 1].style = "top:100px;z-index:1;opacity:0";
-    post[i].style = "top:0;z-index:3";
-    i = 0;
-
-    post[i].style = "top:-100px;z-index:1;opacity:0";
+    await new Promise(resolve => setTimeout(resolve, 2000))
     
+    while(true) {
+        const next = (i + 1) % posts.length
+        
+        posts[i].style = "top:100px; opacity:0";
+        posts[next].style = "top:0px; opacity:1";
+        
+        await new Promise(resolve => setTimeout(resolve, 2000))
+        posts[i].style = "top:-100px; opacity:0; transition: 0s";
+        
+        i = next
+        
     }
 }
-
-
 
 const phone = document.querySelector('.right_part_img');
 
