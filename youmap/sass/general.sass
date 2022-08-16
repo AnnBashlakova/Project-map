@@ -1030,7 +1030,7 @@ body
     padding-top: 330px
     display: flex
     flex-direction: column
-.all-content
+.we-know__content
     padding-top: 95px
     display: flex
 .section__title_we-know
@@ -1064,3 +1064,105 @@ body
 
 .btn-plan-blue
     background: rgba(0, 140, 222, 1);
+
+
+//answer section
+
+
+.answer__section
+    padding-top: 50px
+.section__title_answer
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 62px;
+    text-align: center
+    width: 62%
+.subheader_content_answer
+    width: 62%
+    text-align: center
+    font-size: 56px
+
+
+
+
+.accordeon-answer_container
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+.accordion 
+    width: 1096px
+    // width: 100%;
+    // max-height: 100%;
+    // padding: 30px;
+    margin-inline: 20px;
+    
+    border-radius: 20px;
+
+
+.accordion__content 
+    margin-bottom: 55px;
+    padding-bottom: 10px
+    color: $white
+    font-size: 20px
+    font-weight: 500
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+.question 
+    display: flex;
+    // justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    transition: font-size 0.3s;
+
+// .accordion__content::after 
+//     // right: -300px
+//     content: "+";
+//     transition: 0.3s;
+// .question::after 
+//     position: relative
+//     right: -300px
+//     content: "+"; 
+//     transition: 0.3s;
+.img-plus
+    width: 40px
+    height: 40px
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    border-radius: 50%
+    transition: 0.5s
+    text-align: center
+    position: relative
+    top: -3px
+    
+.img-plus img
+    vertical-align: middle
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+.accordion__conteiner
+    display: flex
+    justify-content: space-between
+.answer 
+    height: 0;
+    font-size: 18px
+    font-weight: 400
+    color: rgba(222, 222, 222, 1);
+
+    overflow: hidden;
+    transition: 0.3s;
+
+// /* ========================CSS for JS */
+
+.accordion__content.active .answer 
+    height: 80px;
+
+.accordion__content.active .question 
+    font-size: 18px;
+
+.accordion__content.active .img-plus
+    transform: rotate(180deg)
