@@ -885,8 +885,12 @@ body
     z-index: 0
     width: 60%
     
-
-
+.app__container-img
+    position: absolute
+    transform: translate(0%, 94%)
+.app__container:hover .app__container-img
+    transform: translate(0%, 23%)
+    transition: 2s
 //select
 
 
@@ -977,6 +981,13 @@ body
 .select-container .option-container .option:hover 
     background: rgba(45, 47, 53, 1);
     padding-left: 20px;
+.select-container .option-container::-webkit-scrollbar 
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    width: 1px;
+
+
+.select-container .option-container::-webkit-scrollbar-thumb 
+    background: #0f0e11;
 
 
 .select-container .option-container .option label 
@@ -986,3 +997,70 @@ body
 .active-ellipse
     transition: 1s
     transform: translate(-8%, 43%);
+
+
+//section we know
+.we-know
+    padding-top: 100px
+.section__wrapper_we-know
+    display: flex
+    background-image: url('../assets/images/bg/line-road.png')
+    background-position-x: center;
+    background-position-y: -16%;
+    background-repeat: no-repeat;
+
+.road-plan
+    padding-top: 384px
+    position: relative
+    // top: 430px
+    right: 146px
+
+.road-plan-item::before
+    content: ""
+    position: absolute
+    // top: 10%
+    left: -52px
+    transform: translate(0 , 5%)
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    background-color: rgba(222, 222, 222, 1)
+
+.header_we-know
+    padding-top: 330px
+    display: flex
+    flex-direction: column
+.all-content
+    padding-top: 95px
+    display: flex
+.section__title_we-know
+    font-size: 42px
+    font-weight: 600
+    line-height: 48px
+    width: 65%
+    text-align: left
+.secondary-block_title-descr-we-know
+    width: 59%
+.road-plan-item
+    padding-bottom: 75px
+.description_text-we-know
+    width: 62%
+.text-plan
+    font-size: 20px
+    color: $white
+    text-align: left
+    padding-bottom: 16px
+.btn-plan
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 72px
+    width: 424px
+    font-size: 20px
+.btn-plan-purple
+    background: rgba(83, 56, 175, 1);
+.btn-plan-green
+    background: rgba(11, 164, 89, 1);
+
+.btn-plan-blue
+    background: rgba(0, 140, 222, 1);
