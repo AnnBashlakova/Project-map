@@ -40,6 +40,31 @@ function scrollPhone() {
     }
 };
 
+let selectContainer = document.querySelector(".select-container");
+let select = document.querySelector(".select");
+let input = document.getElementById("input");
+let options = document.querySelectorAll(".select-container .option");
+let ellipse = document.querySelector(".ellips__app-container");
+
+
+select.onclick = () => {
+    selectContainer.classList.toggle("active");
+    ellipse.classList.toggle("active-ellipse");
+};
+
+options.forEach((e) => {
+    e.addEventListener("click", () => {
+        input.value = e.innerText;
+        selectContainer.classList.remove("active");
+        options.forEach((e) => {
+            e.classList.remove("selected");
+        });
+        e.classList.add("selected");
+    });
+});
+
+
+
 
 // const accordionContents = document.getElementsByClassName("accordion__content");
 // for (i = 0; i < accordionContents.length; i++) {

@@ -579,7 +579,7 @@ body
 
 //section our-price
 .our-price
-    padding-bottom: 160px
+    padding-bottom: 210px
 .section__title_our-price
     padding-top: 130px
     font-weight: 700;
@@ -783,3 +783,206 @@ body
     left: -6px;
     position: absolute;
     z-index: -1;
+
+
+//section reqiest
+.section__title_request
+    font-weight: 700;
+    font-size: 56px;
+
+.secondary-block_title-descr-request
+    width: 49%
+    text-align: center
+
+
+.questions-and-app__container
+    width: 100%
+    padding-top: 56px
+    display: flex
+    justify-content: space-between
+    gap: 20px
+
+.questions_container
+    width: 66%
+    padding: 38px 40px
+    background-color: rgba(22, 23, 27, 0.8)
+    border-radius: 40px
+    border: 3px solid rgba(255, 255, 255, 0.08)
+.form-questions_title
+    width: 96%
+    text-align: left
+    font-size: 40px
+    color: $white
+.secondary-block_title-descr-form
+    color: rgba(222, 222, 222, 1)
+    width: 96%
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left
+    padding-bottom: 30px
+    padding-top: 20px
+.secondary-block_title-descr-req
+    width: 80%
+.questions
+    display: flex
+    flex-direction: column
+
+.select-css, .input-question, .textare-question
+    display: block; 
+    font-size: 18px;
+    height: 80px 
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 0.6);
+    padding: .6em 1.4em .5em 1.8em; 
+    width: 100%; 
+    // max-width: 101%; 
+    box-sizing: border-box; 
+    margin: 0; 
+    border: none
+    border-radius: 20px
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.06);
+    margin-bottom: 14px
+.textare-question
+    padding-top: 20px
+    resize: none
+
+// select
+//     font-size: 18px; 
+//     font-weight: 400; 
+//     color: rgba(255, 255, 255, 0.6);
+.questions_btn
+    height: 78px
+    font-size: 20px
+
+.app__container
+    position: relative
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    position: relative
+    padding: 40px
+    width: 50%
+    // width: 55%
+    padding: 40px
+    background-color: rgba(22, 23, 27, 0.8)
+    border-radius: 40px
+    border: 3px solid rgba(255, 255, 255, 0.08)
+.ellips__app-container
+    position: absolute
+    z-index: 0
+    transform: translate(-8%, 5%)
+.apps_icons-form
+    position: absolute;
+    bottom: 40px;
+    z-index: 100
+.ellipse-apps
+    position: absolute
+    transform: translate(-10%, -1%)
+    z-index: 0
+    width: 60%
+    
+
+
+//select
+
+
+.select-container 
+    position: relative;
+    border-radius: 20px
+    margin: 0 auto;
+    width: 100%
+    
+    // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+
+.select-container .select 
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px
+    height: 80px;
+    margin-bottom: 16px
+    padding: .6em 2.0em .5em 1.0em; 
+
+::placeholder 
+    font-family: 'Golos Text' 
+    font-size: 18px
+
+
+.select-container .select::after 
+    position: absolute;
+    content: ""
+    background-image: url('../assets/images/icons/select.svg');
+    width: 20px;
+    height: 11px;
+    top: 40%;
+    right: 35px;
+    // transform: translateY(-50%) rotate(45deg);
+    cursor: pointer;
+    transition: border-color 0.4s;
+
+
+.select-container.active .select::after
+    transform: rotate(180deg);
+    border: none;
+    // border-left: 2px solid white;
+    // border-top: 2px solid white;
+
+.select-container .select input 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+
+.select-container .option-container 
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    height: 0;
+    border-radius: 20px
+    overflow-y: scroll;
+    transition: 0.4s;
+
+
+.select-container.active .option-container 
+    height: 300px;
+    margin-bottom: 16px
+
+
+
+.select-container .option-container .option 
+    position: relative;
+    padding-left: 30px;
+    height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+
+
+.select-container .option-container .option.selected 
+    background: rgba(45, 47, 53, 1);
+    pointer-events: none;
+
+
+.select-container .option-container .option:hover 
+    background: rgba(45, 47, 53, 1);
+    padding-left: 20px;
+
+
+.select-container .option-container .option label 
+    font-size: 18px
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+.active-ellipse
+    transition: 1s
+    transform: translate(-8%, 43%);

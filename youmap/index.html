@@ -449,6 +449,95 @@
                
             </section> 
 
+            <section class="request">
+                <div class="section__wrapper">
+                    <div class="section__title section__title_request">
+                        Оставляйте заявку
+                    </div>
+                    <div class="title-descr secondary-block_title-descr secondary-block_title-descr-request">
+                        Задайте нам любой вопрос, уточните самые тонкие моменты или же просто можете поблагодарить нас.
+                    </div>
+
+                    <div class="questions-and-app__container">
+
+                        <div class="questions_container">
+                            <div class="form-questions">
+                                <div class="form-questions_title">Задавайте вопросы</div>
+                                <div class="title-descr secondary-block_title-descr secondary-block_title-descr-form">
+                                    Понимаем ваши сложности и кол-во свободного времени. Мы поможем создать карту вашего
+                                    помещения!</div>
+                            </div>
+                            <form action="#" class="questions">
+
+
+                                <div class="select-container">
+                                    <div class="select">
+                                        <input type="text" id="input" placeholder="Тема заявки" onfocus="this.blur();">
+                                    </div>
+                                    <div class="option-container">
+                                        <div class="option">
+                                            <label>Предложить идею</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>Сообщить об ошибке</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>Задать вопрос</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>Заказать разработку</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>Другое</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <select name="nubexSelect" class="select-css">
+                                    <option class="select-option" selected>Тема заявки</option>
+                                    <option>Сколько?</option>
+                                    <option>Когда?</option>
+                                    <option>Почему</option>
+                                </select> -->
+                                <input required type="text" placeholder="Ваше имя" class="input-question">
+                                <input required type="email" placeholder="Почта" class="input-question">
+                                <textarea name="" id="" style="width:100%; height:151px;"" placeholder=" C какой целью хотите использовать?" class="textare-question"></textarea>
+
+                                <button class="btn questions_btn btn-color"><a href="#" class="open-link">Оставить
+                                        заявку</a></button>
+
+                            </form>
+
+                        </div>
+                        <div class="app__container">
+                            <div class="form-questions">
+                                <div class="form-questions_title">Скачайте приложение и попробуйте приложение</div>
+                                <div class="title-descr secondary-block_title-descr secondary-block_title-descr-req">
+                                    Удобное приложение для навигации и поиска путей!</div>
+                            </div>
+                            <div class="apps_icon apps_icons-form">
+                                <a href="#" class="apps_icon_link app_apple_link"><img
+                                        src="./assets/images/icons/apple-app.png" alt="app-apple"
+                                        class="img_apps_icons"></a>
+                                <a href="#" class="apps_icon_link app_google_link"><img
+                                        src="./assets/images/icons/google-app.png" alt="app-google"
+                                        class="img_goole_icons"></a>
+                                <a href="#" class="apps_icon_link qr_code_link"><img
+                                        src="./assets/images/icons/qrcode.png" alt="qrcode" class="img_qr_link"></a>
+                            </div>
+                            <div class="ellips__app-container">
+                                <img src="./assets/images/ellipses/Ellipse-app.png" alt="ellips" class="Ellipse-app">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+
             </div>
         </main> 
 
@@ -460,110 +549,8 @@
 
 
 
-            <!-- <section class="our-price">
-                <div class="wrapper_block_our-price">
-                    <div class="subheader_content_block subheader_content_our-price">
-                        Наши тарифы
-                    </div>
-                    <div class="description_text">
-                        Без преувеличения, мы можем сказать, что мы создали самые выгодные и удобыне тарифы для всех
-                        пользователей.
-                    </div>
-                </div>
-
-                <div class="tarif-cards">
-
-                    <div class="tarif_card-item">
-
-                        <div class="tarif_card-title">
-                            <div class="tarif_name">
-                                <div class="tarif_name-title">Базовый</div>
-                                <div class="tarif_name-dates name-dates-green">Скоро</div>
-                            </div>
-                            <div class="tarif_line"></div>
-                            <div class="tarif_coast">Бесплатно</div>
-                            <div class="tarif-coast-descriotin">За использование конструктора</div>
-                        </div>
-                        <ul class="tarif_list">
-                            <li class="tarif_list-item">Создание карты</li>
-                            <li class="tarif_list-item">Все инструмента конструктора доступны до регистрации</li>
-                            <li class="tarif_list-item">Возможность <br> продемонстрировать карту</li>
-                        </ul>
-                        <div class="btn-cont">
-                            <button class="btn tarif_btn"><a href="#" class="open-link">Открыть конструктор</a></button>
-                        </div>
-
-                    </div>
-
-                    <div class="tarif_card-item tarif_card-color-boder">
-
-                        <div class="tarif_card-title">
-                            <div class="tarif_name">
-                                <div class="tarif_name-title">Стандарный</div>
-                                <div class="tarif_name-dates name-dates-blue">14 дней бесплатно</div>
-                            </div>
-                            <div class="tarif_line"></div>
-
-                            <div class="tarif_coast-item">
-                                <div class="tarif_coast-second">9900</div>
-                                <div class="tarif-line"></div>
-                                <div class="price-item">За <br> 1 метр <sup><small>2</small></sup></div>
-                            </div>
-
-                            <div class="tarif-coast-descriotin">Публичное
-                                размещение карты</div>
-                        </div>
-                        <ul class="tarif_list">
-                            <li class="tarif_list-item">Создание карты</li>
-                            <li class="tarif_list-item">Все инструмента конструктора доступны до регистрации</li>
-                            <li class="tarif_list-item">Возможность <br> продемонстрировать карту</li>
-                        </ul>
-                        <div class="btn-cont">
-                            <button class="btn tarif_btn btn-color"><a href="#" class="open-link">Попробовать
-                                    бесплатно</a></button>
-                        </div>
-
-                    </div>
-
-                    <div class="tarif_card-item">
-
-                        <div class="tarif_card-title">
-                            <div class="tarif_name">
-                                <div class="tarif_name-title">Полный</div>
-                                <div class="tarif_name-dates name-dates-pink">Готовое решение</div>
-                            </div>
-                            <div class="tarif_line"></div>
-
-                            <div class="tarif_coast-item-third">
-                                <div class="tarif_coast-third">9900<sup><small>₽</small></sup></div>
-                                <div class="tarif-plus">+</div>
-                                <div class="tarif_coast-third">1<sup><small>₽</small></sup></div>
-                                <div class="tarif-line"></div>
-                                <div class="price-item">За <br> 1 метр <sup><small>2</small></sup></div>
-                            </div>
-
-
-                            <div class="tarif-coast-descriotin">Проектирование <br> карты за вас</div>
-                        </div>
-                        <ul class="tarif_list">
-                            <li class="tarif_list-item">Всё что тарифе “Стандарный”</li>
-                            <li class="tarif_list-item">Мы сами оцифруем план вашего помещения</li>
-                            <li class="tarif_list-item">Работаем с любым форматом карт (будь-то план, картинка, или
-                                инженерные форматы)</li>
-                            <li class="tarif_list-item">Скидка для заказов с простой планировкой</li>
-                            <li class="tarif_list-item">Добавим на карту прилегающие территории</li>
-                            <li class="tarif_list-item">Добавим все аннотации, не <br> упустим ни одной тропинки</li>
-                        </ul>
-                        <div class="btn-cont">
-                            <button class="btn tarif_btn btn-color"><a href="#" class="open-link">Рассчитать
-                                    стоимость</a></button>
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
+          
 <!-- 
-
             <section class="request">
                 <div class="wrapper_block_request">
                     <div class="subheader_content_block subheader_content_our-price">
