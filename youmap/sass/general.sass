@@ -1,7 +1,7 @@
 @import _resets
 @import _fonts
 @import _variables
-// @import _main
+@import _media
 
 body
     margin: 0 auto
@@ -10,7 +10,7 @@ body
 
 main
     z-index: 1
-    height: 100vh
+
 
 .header__wrapper
     max-width: 1440px
@@ -22,7 +22,7 @@ main
 
 .wrapper
     max-width: 1440px
-    margin: auto
+    margin: 0 auto
     border: 1px solid red
     border-radius: 20px
 
@@ -892,9 +892,10 @@ main
 .app__container-img
     position: absolute
     transform: translate(0%, 94%)
+    transition: 2s
 .app__container:hover .app__container-img
     transform: translate(0%, 23%)
-    transition: 2s
+    // transition: 2s
 //select
 
 
@@ -1170,7 +1171,7 @@ main
 .footer
     max-width: 1440px
     margin: auto
-    z-index: -1;
+    // z-index: -1;
     position: relative;
     margin-top: 60px;
     background: #404040;
@@ -1191,7 +1192,7 @@ main
     left: 0;
     background-image: linear-gradient(90.77deg, rgba(57, 226, 141, 0.5) 0%, rgba(41, 41, 43, 0.37) 48.41%, rgba(37, 83, 153, 0.67) 75.87%, rgba(33, 119, 247, 0.5) 99.34%, rgb(41, 41, 43));
     // background-image: linear-gradient(90.77deg, rgba(57, 226, 141, 0.5) 0%, rgba(41, 41, 43, 0.37) 48.41%, rgba(37, 83, 153, 0.67) 75.87%, rgba(33, 119, 247, 0.5) 99.34%, rgb(41, 41, 43));
-    z-index: -1;
+    // z-index: -1;
     // background-color: green
     transition: opacity 0.8s linear;
     opacity: 0
