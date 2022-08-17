@@ -8,6 +8,10 @@ body
     background-color: $black
     font-family: 'Golos Text' 
 
+main
+    z-index: 1
+    height: 100vh
+
 .header__wrapper
     max-width: 1440px
     margin: auto
@@ -1117,15 +1121,7 @@ body
     user-select: none;
     transition: font-size 0.3s;
 
-// .accordion__content::after 
-//     // right: -300px
-//     content: "+";
-//     transition: 0.3s;
-// .question::after 
-//     position: relative
-//     right: -300px
-//     content: "+"; 
-//     transition: 0.3s;
+
 .img-plus
     width: 40px
     height: 40px
@@ -1166,3 +1162,98 @@ body
 
 .accordion__content.active .img-plus
     transform: rotate(180deg)
+
+//footer
+
+
+// .wrapper-footer
+.footer
+    max-width: 1440px
+    margin: auto
+    z-index: -1;
+    position: relative;
+    margin-top: 60px;
+    background: #404040;
+    border-radius: 56px;
+    transition: background 2s ease-out 100ms;
+    padding: 40px 72px 20px 72px
+    margin-top: 60px
+
+
+
+.footer::before 
+    position: absolute;
+    content: "";
+    top: 0;
+    border-radius: 56px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90.77deg, rgba(57, 226, 141, 0.5) 0%, rgba(41, 41, 43, 0.37) 48.41%, rgba(37, 83, 153, 0.67) 75.87%, rgba(33, 119, 247, 0.5) 99.34%, rgb(41, 41, 43));
+    // background-image: linear-gradient(90.77deg, rgba(57, 226, 141, 0.5) 0%, rgba(41, 41, 43, 0.37) 48.41%, rgba(37, 83, 153, 0.67) 75.87%, rgba(33, 119, 247, 0.5) 99.34%, rgb(41, 41, 43));
+    z-index: -1;
+    // background-color: green
+    transition: opacity 0.8s linear;
+    opacity: 0
+.footer:hover::before 
+    opacity: 1
+
+
+
+
+.footer-under
+    z-index: 10
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // width: 90%
+
+    
+.footer-under
+    width: 100%
+    display: flex
+    padding-bottom: 40px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.footer_right-part
+    align-items: center
+    text-align: right
+
+.email-info
+    z-index: 10
+    font-size: 40px
+    font-weight: 500
+    color: $white
+    padding-bottom: 20px
+.footer-descr
+    z-index: 10
+    font-size: 18px
+    font-weight: 400
+    color: $white
+.footer-description_app
+    font-size: 16px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.8);
+.footer-above
+    display: flex
+    justify-content: space-between
+    width: 100%
+.footer_year, .footer_politic
+    padding-top: 20px
+    display: flex
+    justify-content: space-between
+    font-size: 16px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.75);
+    align-items: center
+.footer_politic
+    gap: 30px
+.footer_year
+    gap: 12px
+
+
+.footer_year-dot
+    width: 1px
+    height: 1px
+    background: rgba(255, 255, 255, 0.75);
+.app-footer
+    background: rgba(31, 31, 31, 0.6);
