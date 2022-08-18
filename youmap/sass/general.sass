@@ -1,7 +1,7 @@
 @import _resets
 @import _fonts
 @import _variables
-@import _media
+
 
 body
     margin: 0 auto
@@ -38,7 +38,7 @@ main
     display: flex
     justify-content: space-between
     align-items: center
-    gap: 175px
+    gap: 11rem
     border-radius: 28px
     background: $color-header
     padding: 20px
@@ -76,32 +76,31 @@ main
     
 
 .btn__open-map
-    width: 165px
+    width: 10.3rem
     background-color: $blue-btn
 
 
 //main
 .btn_open_constructor
-    width: 244px
+    width: 15.25rem
     height: 55px
-    margin: 30px 0 30px 0
+    height: 3.437rem
+    margin: 1.875rem 0 1.875rem 0
 .main
     margin-top: -100px
     z-index: 1
-    z-index: 1
-
 
 //sections
 .main-information
-    padding-top: 374px
-    padding-bottom: 100px
+    padding-top: 23.375rem
+    padding-bottom: 6.25rem
     width: 100%
 
 .main-information_item
-    padding-left: 160px
+    padding-left: 10rem
 .first-block
     position: relative
-    padding-bottom: 490px
+    padding-bottom: 30.625rem
 
 // ellipses
 .ellips_first-section
@@ -185,6 +184,8 @@ main
     text-align: center
 .img_qr_link
     transform: translateY(37%)
+.phone-laptop
+    display: none
 .stick
     z-index: 100
     position: fixed
@@ -891,7 +892,7 @@ main
     
 .app__container-img
     position: absolute
-    transform: translate(0%, 94%)
+    transform: translate(0%, 102%)
     transition: 2s
 .app__container:hover .app__container-img
     transform: translate(0%, 23%)
@@ -1258,3 +1259,5 @@ main
     background: rgba(255, 255, 255, 0.75);
 .app-footer
     background: rgba(31, 31, 31, 0.6);
+
+@import _media
