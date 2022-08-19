@@ -414,13 +414,15 @@ main
 
 //projects
 .section__title_projects
-    z-index: 100
+    position: relative
+    // z-index: 1000
     font-size: 56px
     font-weight: 700
     text-align: center
     padding-top: 110px
     padding-bottom: 57px
-
+.section__title_projects
+    z-index: 10
 
 //carousel-slider
 .projects__container
@@ -431,7 +433,7 @@ main
 
 .ellips__project-container
     position: absolute
-    z-index: 0
+    z-index: -1
     transform: translate(-14%, -73%)
 .projects__slider
     display: flex
@@ -546,7 +548,8 @@ main
 .jsPrev
     transform: rotate(-180deg)
 
-
+.carousel_open-map_container
+    display: none
 .carousel_dots-container
     display: flex
     gap: 6px
@@ -879,7 +882,7 @@ main
 .ellips__app-container
     position: absolute
     z-index: 0
-    transform: translate(-8%, 5%)
+    transform: translate(-8%, 13%)
 .apps_icons-form
     position: absolute;
     bottom: 40px;
@@ -1002,7 +1005,7 @@ main
     cursor: pointer;
 .active-ellipse
     transition: 1s
-    transform: translate(-8%, 43%);
+    transform: translate(-8%, 46%);
 
 
 //section we know
@@ -1160,7 +1163,7 @@ main
     height: 80px;
 
 .accordion__content.active .question 
-    font-size: 18px;
+    font-size: 20px;
 
 .accordion__content.active .img-plus
     transform: rotate(180deg)
