@@ -14,6 +14,7 @@ main
 
 .header__wrapper
     max-width: 1440px
+    
     margin: auto
     border: 1px solid red
     border-radius: 20px
@@ -21,10 +22,12 @@ main
     justify-content: center
 
 .wrapper
+    // max-width: 1920px
     max-width: 1440px
     margin: 0 auto
     border: 1px solid red
     border-radius: 20px
+
 
 
 //header
@@ -40,6 +43,7 @@ main
     align-items: center
     gap: 11rem
     border-radius: 28px
+    backdrop-filter: blur(12px);
     background: $color-header
     padding: 20px
     
@@ -200,6 +204,7 @@ main
 .secondary-block__content-one, .econdary-block__content-three, .secondary-block__content-two
     position: relative
 
+
 //ellipse
 .ellips__secondary-block-one, .ellips__secondary-block-three, .ellips__secondary-block-two
     position: absolute
@@ -209,7 +214,7 @@ main
 .ellips__secondary-block-two
     transform: translate(25%, -35%)
 .ellips__secondary-block-three
-    transform: translate(25%, -35%)
+    transform: translate(16%, -35%)
 
 //
 
@@ -237,13 +242,13 @@ main
 // section made-maps
 .made-maps
     // margin-bottom: 60px
-    // display: none
+    display: none
 
 .section__wrapper
     display: flex
     flex-direction: column
     align-items: center
-    padding: 0 72px
+    padding: 0 5%
 
 .section__wrapper_made-maps
     padding-top: 60px
@@ -269,12 +274,12 @@ main
 //section why-choose
 .why-choose
     margin-top: 96px
+    // width: 100%
 .section__wrapper_why-choose
     overflow: hidden
     padding-top: 60px
     background-color: rgba(255, 255, 255, 0.02)
-    border: 3px solid rgba(255, 255, 255, 0.04)
-    width: 100%
+    max-width: 1444px
     margin: auto
     border-radius: 48px
 //     display: flex
@@ -559,6 +564,7 @@ main
     border-radius: 12px
     width: 104px
     height: 40px
+    transition: 1s
     background: rgba(30, 30, 30, 0.85);
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.06);
 
@@ -566,13 +572,25 @@ main
     transform: translate(246%, -26%)
 .carousel_dots-container-right
     transform: translate(246%, -26%)
-.carousel_track-container:hover .carousel_dots-container-left
+
+.jsNext:hover .carousel_dots-container-left
     transition: 1s
     transform: translate(246%, -166%)
-.carousel_track-container:hover .carousel_dots-container-right
-    transition: 1s
+// .carousel_track-container:hover .carousel_dots-container-left
+//     transition: 1s
+//     transform: translate(246%, -166%)
+// .carousel_track-container:hover .carousel_dots-container-right
+//     transition: 1s
+//     transform: translate(246%, -166%)
+// .carousel_btn:hover .carousel_dots-container-right
+//     transition: 1s
+//     transform: translate(246%, -166%)
+
+.dot-translate
     transform: translate(246%, -166%)
 
+.dot-translate-one
+    transform: translate(246%, -166%)
 .dot
     cursor: pointer
     height: 8px
@@ -605,6 +623,7 @@ main
     align-items: center
     justify-content: space-between
     z-index: 100
+    gap: 21px
 
 //ellipse
 .ellips__price-container
@@ -624,7 +643,7 @@ main
     position: relative
     border: 3px solid rgba(255, 255, 255, 0.1)
     height: 812px
-    width: 32%
+    max-width: 418px
     background: linear-gradient(0deg, rgba(22, 23, 27, 0.8), rgba(22, 23, 27, 0.8))
     border-radius: 40px
 .tarif_name-dates
@@ -651,7 +670,7 @@ main
     justify-content: space-between
     vertical-align: center
     padding: 22px 20px 35px 26px
-    width: 85%
+    width: 94%
 .tarif-card__name-std
     gap: 9px
     padding: 22px 0px 35px 0px
@@ -735,18 +754,11 @@ main
 .btn-color
     background: rgba(12, 117, 241, 1)
     color: $white
-.tarif_coast-second::after
-    content: "₽"
-    font-weight: 200
-    font-family: 'Golos Text'
-    font-size: 28px
-    position: relative
-    top: -20px
 
 .price-item
     // 
     position: relative
-    top: 12px
+    top: 22%
     font-size: 17px
     font-weight: 400
     color: rgba(255, 255, 255, 0.4);
@@ -777,7 +789,7 @@ main
     position: relative
     border: none
     border-radius: 40px
-    background-color: $black
+    // background-color: $black
     box-shadow: 2px 2px 20px 0px rgba(12, 117, 241, 0.12)
 
 .tarif_card-color-boder::before 
@@ -807,11 +819,11 @@ main
     width: 100%
     padding-top: 56px
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     gap: 20px
 
 .questions_container
-    width: 66%
+    max-width: 724px
     padding: 38px 40px
     background-color: rgba(22, 23, 27, 0.8)
     border-radius: 40px
@@ -873,7 +885,7 @@ main
     flex-direction: column
     position: relative
     padding: 40px
-    width: 50%
+    width: 552px
     // width: 55%
     padding: 40px
     background-color: rgba(22, 23, 27, 0.8)
@@ -897,9 +909,16 @@ main
     position: absolute
     transform: translate(0%, 102%)
     transition: 2s
-.app__container:hover .app__container-img
-    transform: translate(0%, 23%)
+.transform-Y
+    transform: translate(0%, 29%)
+// .app__container:hover .app__container-img
+//     transform: translate(0%, 23%)
     // transition: 2s
+.app-img-link
+    background: rgba(50, 61, 156, 1);
+
+
+
 //select
 
 
@@ -917,7 +936,7 @@ main
     background: rgba(255, 255, 255, 0.06);
     border-radius: 20px
     height: 80px;
-    margin-bottom: 16px
+    margin-bottom: 14px
     padding: .6em 2.0em .5em 1.0em; 
 
 ::placeholder 
@@ -966,8 +985,8 @@ main
 
 
 .select-container.active .option-container 
-    height: 300px;
-    margin-bottom: 16px
+    // height: 300px;
+    // margin-bottom: 14px
 
 
 
@@ -1003,9 +1022,9 @@ main
     font-size: 18px
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
-.active-ellipse
-    transition: 1s
-    transform: translate(-8%, 46%);
+// .active-ellipse
+//     transition: 1s
+//     transform: translate(-8%, 46%);
 
 
 //section we know
@@ -1171,15 +1190,17 @@ main
 //footer
 
 
-// .wrapper-footer
+.wrapper-footer
+    // background-color: #fff
+    z-index: 3
 .footer
     max-width: 1440px
     margin: auto
-    // z-index: -1;
+    z-index: 0;
     position: relative;
     margin-top: 60px;
     background: #404040;
-    border-radius: 56px;
+    border-radius: 56px 56px 0px 0px;
     transition: background 2s ease-out 100ms;
     padding: 40px 72px 20px 72px
     margin-top: 60px
@@ -1189,8 +1210,9 @@ main
 .footer::before 
     position: absolute;
     content: "";
+    z-index: 0;
     top: 0;
-    border-radius: 56px;
+    border-radius: 56px 56px 0px 0px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1200,14 +1222,14 @@ main
     // background-color: green
     transition: opacity 0.8s linear;
     opacity: 0
-.footer:hover::before 
+.footer:hover::before
+    z-index: -1
     opacity: 1
 
 
 
 
 .footer-under
-    z-index: 10
     display: flex
     justify-content: space-between
     align-items: center
@@ -1215,6 +1237,7 @@ main
 
     
 .footer-under
+    
     width: 100%
     display: flex
     padding-bottom: 40px
@@ -1224,13 +1247,11 @@ main
     text-align: right
 
 .email-info
-    z-index: 10
     font-size: 40px
     font-weight: 500
     color: $white
     padding-bottom: 20px
 .footer-descr
-    z-index: 10
     font-size: 18px
     font-weight: 400
     color: $white
