@@ -40,30 +40,47 @@ function scrollPhone() {
     }
 };
 
+
+//animation-phone
+
+let animation = document.querySelector('.app__container-img');
+
+
+window.addEventListener('scroll', animationPhone);
+function animationPhone() {
+    let vertical_position = pageYOffset;
+    console.log(vertical_position)
+    if(vertical_position > 6267){
+        animation.classList.add('transform-Y');
+
+    } 
+};
+//select
+
 let selectContainer = document.querySelector(".select-container");
 let select = document.querySelector(".select");
 let input = document.getElementById("input");
 let options = document.querySelectorAll(".select-container .option");
-let ellipse = document.querySelector(".ellips__app-container");
 
 
 select.onclick = () => {
     selectContainer.classList.toggle("active");
-    ellipse.classList.toggle("active-ellipse");
 };
 
-options.forEach((e) => {
-    e.addEventListener("click", () => {
-        input.value = e.innerText;
-        selectContainer.classList.remove("active");
-        options.forEach((e) => {
-            e.classList.remove("selected");
-        });
-        e.classList.add("selected");
-    });
-});
+// options.forEach((e) => {
+//     e.addEventListener("click", () => {
+//         input.value = e.innerText;
+//         selectContainer.classList.remove("active");
+//         options.forEach((e) => {
+//             e.classList.remove("selected");
+//         });
+//         e.classList.add("selected");
+//     });
+// });
 
 
+
+//accordion
 
 
 const accordionContents = document.getElementsByClassName("accordion__content");
