@@ -49,7 +49,7 @@ let animation = document.querySelector('.app__container-img');
 window.addEventListener('scroll', animationPhone);
 function animationPhone() {
     let vertical_position = pageYOffset;
-    console.log(vertical_position)
+    // console.log(vertical_position)
     if(vertical_position > 6267){
         animation.classList.add('transform-Y');
 
@@ -77,6 +77,58 @@ select.onclick = () => {
 //         e.classList.add("selected");
 //     });
 // });
+
+
+//slider-dots
+
+const imgSliderright = document.querySelector(".project__carousel-right")
+const dotsRight = document.querySelector(".carousel_dots-container-right")
+
+const dotsLeft = document.querySelector(".carousel_dots-container-left")
+const imgSliderLeft = document.querySelector(".project__carousel-left")
+
+
+// document.querySelectorAll('.project__carousel').forEach((element) => {
+//     element.addEventListener('mouseenter', function () {
+//         dots.classList.add('dot-translate');
+//     });
+// });
+
+// document.querySelectorAll('.project__carousel').forEach((element) => {
+//     element.addEventListener('mouseleave', function () {
+//         dots.classList.remove('dot-translate');
+//     });
+// });
+
+
+// imgSliderright.addEventListener('mouseover', addDots);
+// function addDots(){
+//     dotsRigh.classList.add('dot-translate')
+// }
+
+
+// imgSliderright.addEventListener('mouseleave', removeDots);
+// function removeDots(){
+//     dotsRight.classList.remove('dot-translate')
+// }
+
+
+// mouseover
+
+
+
+imgSliderLeft.addEventListener('mouseover', addDots);
+function addDots(){
+    dotsLeft.classList.add('dot-translate-one')
+}
+
+
+imgSliderLeft.addEventListener('mouseleave', removeDots);
+function removeDots(){
+    dotsLeft.classList.remove('dot-translate-one')
+}
+
+
 
 
 
