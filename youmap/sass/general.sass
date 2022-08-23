@@ -793,11 +793,11 @@ main
     box-shadow: 2px 2px 20px 0px rgba(12, 117, 241, 0.12)
 
 .tarif_card-color-boder::before 
-    border-radius: 40px
+    border-radius: 44px
     width: 100%
     height: 100%
     content: '';
-    background-image: linear-gradient(149.16deg, rgba(12, 117, 241, 0.45) 0%, rgba(6, 231, 117, 0.45) 48.44%,rgba(85, 47, 218, 0.45) 100%);
+    background-image: linear-gradient(128.16deg, rgba(12, 117, 241, 0.45) 0%, rgba(6, 231, 117, 0.45) 48.44%,rgba(85, 47, 218, 0.45) 100%);
     padding: 6px;
     top: -6px;
     left: -6px;
@@ -910,7 +910,7 @@ main
     transform: translate(0%, 102%)
     transition: 2s
 .transform-Y
-    transform: translate(0%, 29%)
+    transform: translate(0%, 34%)
 // .app__container:hover .app__container-img
 //     transform: translate(0%, 23%)
     // transition: 2s
@@ -975,33 +975,48 @@ main
     color: white;
     cursor: pointer;
 
+.questions input
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+
+
+
 .select-container .option-container 
-    position: relative;
-    background: rgba(255, 255, 255, 0.06);
+    position: absolute
+    background: rgba(45, 47, 53, 1);
     height: 0;
     border-radius: 20px
     overflow-y: scroll;
     transition: 0.4s;
 
 
-.select-container.active .option-container 
-    // height: 300px;
-    // margin-bottom: 14px
+
+.select-container.active .option-container
+    position: absolute
+    height: 330px
+    width: 100%
+    margin-bottom: 14px
+
 
 
 
 .select-container .option-container .option 
     position: relative;
     padding-left: 30px;
-    height: 60px;
+    height: 66px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     cursor: pointer;
     display: flex;
     align-items: center;
     transition: 0.2s;
 
+.select-container .option-container .option:nth-child(5)
+    border-bottom: none
 
-.select-container .option-container .option.selected 
+.select-container .option-container .option.selected
     background: rgba(45, 47, 53, 1);
     pointer-events: none;
 
@@ -1019,12 +1034,11 @@ main
 
 
 .select-container .option-container .option label 
+    font-weight: 400
     font-size: 18px
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
-// .active-ellipse
-//     transition: 1s
-//     transform: translate(-8%, 46%);
+
 
 
 //section we know
@@ -1217,11 +1231,9 @@ main
     bottom: 0;
     left: 0;
     background-image: linear-gradient(90.77deg, rgba(57, 226, 141, 0.5) 0%, rgba(41, 41, 43, 0.37) 48.41%, rgba(37, 83, 153, 0.67) 75.87%, rgba(33, 119, 247, 0.5) 99.34%, rgb(41, 41, 43));
-    // background-image: linear-gradient(90.77deg, rgba(57, 226, 141, 0.5) 0%, rgba(41, 41, 43, 0.37) 48.41%, rgba(37, 83, 153, 0.67) 75.87%, rgba(33, 119, 247, 0.5) 99.34%, rgb(41, 41, 43));
-    // z-index: -1;
-    // background-color: green
     transition: opacity 0.8s linear;
     opacity: 0
+    z-index: -1
 .footer:hover::before
     z-index: -1
     opacity: 1
