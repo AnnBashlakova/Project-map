@@ -50,7 +50,7 @@ window.addEventListener('scroll', animationPhone);
 function animationPhone() {
     let vertical_position = pageYOffset;
     // console.log(vertical_position)
-    if(vertical_position > 6267){
+    if(vertical_position > 6567){
         animation.classList.add('transform-Y');
 
     } 
@@ -67,16 +67,16 @@ select.onclick = () => {
     selectContainer.classList.toggle("active");
 };
 
-// options.forEach((e) => {
-//     e.addEventListener("click", () => {
-//         input.value = e.innerText;
-//         selectContainer.classList.remove("active");
-//         options.forEach((e) => {
-//             e.classList.remove("selected");
-//         });
-//         e.classList.add("selected");
-//     });
-// });
+options.forEach((e) => {
+    e.addEventListener("click", () => {
+        input.value = e.innerText;
+        selectContainer.classList.remove("active");
+        options.forEach((e) => {
+            e.classList.remove("selected");
+        });
+        e.classList.add("selected");
+    });
+});
 
 
 //slider-dots
