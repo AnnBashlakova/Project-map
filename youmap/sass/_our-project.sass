@@ -1,0 +1,201 @@
+.carousel-container
+    z-index: 1
+    position: relative
+    width: 638px
+    height: 406px
+    border-radius: 26px
+    border: 3px solid rgba(255, 255, 255, 0.1)
+    background-color: rgba(24, 25, 27, 0.6)
+    padding: 20px
+
+.carousel 
+    position: relative;
+    overflow: hidden;
+    z-index: 100
+    width: 598px
+    height: 302px
+
+
+.carousel_track-container 
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+
+.carousel_track 
+    position: relative;
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+.carousel_slide,
+.carousel_image 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+.carousel_title
+    display: block
+    padding-top: 28px
+    padding-bottom: 28px
+    font-size: 28px;
+    font-weight: 500
+    color: #fff;
+    text-align: left
+    padding-left: 50px
+
+.carousel_slide 
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+
+
+.carousel_slide.is-selected 
+    transform: translateX(0);
+
+
+.carousel_slide.is-selected ~ .carousel_slide 
+    transform: translateX(100%);
+
+
+.carousel_image
+    // padding: 84px 20px 20px
+    z-index: -1;
+    display: flex
+    justify-content: center
+    border-radius: 26px
+
+.carousel_image > img 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 26px
+
+
+.carousel_title
+    padding-top: 0
+    padding-bottom: 24px
+    font-size: 28px;
+    color: #fff;
+
+
+.carousel_btn,
+.carousel_dot 
+    z-index: 1;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+
+
+.carousel_btn 
+    position: absolute;
+    // top: 50%;
+    background-color: transparent;
+    transform: translateY(-50%);
+
+
+.carousel_btn:focus,
+.carousel_dot:focus,
+.carousel_btn:active,
+.carousel_dot:active 
+    outline: none;
+
+
+.carousel_btn > * 
+    pointer-events: none;
+
+
+.carousel_btn 
+    position: absolute
+    top: 52%
+    background-color:  rgba(42, 48, 57, 1)
+    width: 48px
+    height: 48px
+    border-radius: 12px
+
+
+.carousel_btn > * 
+    pointer-events: none;
+
+
+
+.jsPrev 
+    top: 44%
+    left: 50px
+
+.jsNext 
+    right: 50px
+
+.jsPrev
+    transform: rotate(-180deg)
+
+
+.carousel_btn:hover svg 
+    fill: var(--color-active-state);
+
+
+.jsPrev 
+    left: 10px;
+
+
+.jsNext 
+    right: 10px;
+
+
+.jsPrev svg 
+    transform: rotate(-90deg);
+
+
+.jsNext svg 
+    transform: rotate(90deg);
+
+
+.carousel_nav
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 6px
+    height: 40px;
+    width: 104px;
+    border-radius: 12px;
+    // padding: 16px 25px 16px 25px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 131%);
+    transition: 2s;
+    background: rgba(30, 30, 30, 0.85);
+
+
+
+.dot-translate 
+    transform: translate(-50%, -18%);
+
+
+
+
+.carousel_dot 
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(183, 183, 183, 1);
+    transition: .2s;
+
+
+
+
+.carousel_dot.is-selected 
+    width: 12px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(12, 117, 241, 1)
+    transition: 0.5s;
