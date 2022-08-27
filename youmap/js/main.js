@@ -142,8 +142,8 @@ const swiper2 = new Swiper('.swiper2', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next2',
-        prevEl: '.swiper-button-prev2',
+        nextEl: '.swiper-button-prev2',
+        prevEl: '.swiper-button-next2',
     },
 
     });

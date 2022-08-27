@@ -55,6 +55,10 @@
     .carousel 
         max-width: 463px
         height: 272px
+    .swiper-pagination
+        transform: translate(158%, 123%) !important
+    .dot-translate
+        transform: translate(158%, 0%) !important
 
 
 @media  screen and (max-width: 1185px) 
@@ -198,8 +202,7 @@
         width: 150px;
         height: 100%
         top: 0
-        // left: calc(21vw - 200px)
-        right: calc(32px + 156 * ((100vw - 768px) / (1180 - 768)));
+        right: calc(32px + 175 * ((100vw - 768px) / (1180 - 768)));
         background: linear-gradient(to right, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%, transparent 100%);
     .tarif-card__item:nth-child(3)::after
         position: absolute;
@@ -208,7 +211,6 @@
         height: 100%
         top: 0
         left: calc(32px + 175 * ((100vw - 768px) / (1180 - 768)));
-        // left: calc(33vw - 200px)
         background: linear-gradient(to left, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%, transparent 100%);
 
 
@@ -280,7 +282,8 @@
     .carousel-container
         width: 462px
         height: 356px
-    
+    .animation_wrapper 
+        --itemWidth: 56%;
     .carousel 
         max-width: 422px
         height: 252px
