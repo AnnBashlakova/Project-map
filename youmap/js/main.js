@@ -79,9 +79,76 @@ options.forEach((e) => {
 });
 
 
+const carousel = document.querySelector(".carousel1");
+const pagination = document.querySelector(".swiper-pagination1");
+
+carousel.addEventListener('mouseover', addDots);
+function addDots(){
+    pagination.classList.add('dot-translate');
+};
+
+carousel.addEventListener('mouseleave', removeDots);
+function removeDots(){
+    pagination.classList.remove('dot-translate');
+};
 
 
 
+const carousel2 = document.querySelector(".carousel2");
+
+const pagination2 = document.querySelector(".swiper-pagination2");
+console.log(pagination2)
+
+carousel2.addEventListener('mouseover', addDots2);
+function addDots2(){
+    pagination2.classList.add('dot-translate');
+};
+
+carousel2.addEventListener('mouseleave', removeDots2);
+function removeDots2(){
+    pagination2.classList.remove('dot-translate');
+};
+
+//carousel1
+const swiper = new Swiper('.swiper1', {
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination1',
+        type: 'bullets',
+        clickable: true,
+    //   dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
+    },
+
+    });
+
+//carousel2
+const swiper2 = new Swiper('.swiper2', {
+
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination2',
+        type: 'bullets',
+        clickable: true,
+    //   dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+    },
+
+    });
+    
 //accordion
 
 
@@ -94,3 +161,7 @@ for (let i = 0; i < accordionContents.length; i++) {
 
 
 const plus = document.getElementsByClassName("img-plus");
+
+
+
+//tarif
