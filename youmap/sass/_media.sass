@@ -198,7 +198,8 @@
         width: 150px;
         height: 100%
         top: 0
-        left: calc(21vw - 200px)
+        // left: calc(21vw - 200px)
+        right: calc(32px + 156 * ((100vw - 768px) / (1180 - 768)));
         background: linear-gradient(to right, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%, transparent 100%);
     .tarif-card__item:nth-child(3)::after
         position: absolute;
@@ -206,7 +207,8 @@
         width: 190px;
         height: 100%
         top: 0
-        left: calc(33vw - 200px)
+        left: calc(32px + 175 * ((100vw - 768px) / (1180 - 768)));
+        // left: calc(33vw - 200px)
         background: linear-gradient(to left, #1F1F1F 0%, rgba(31, 31, 31, 0) 100%, transparent 100%);
 
 
@@ -262,9 +264,9 @@
     .secondary-block_title-our-price 
         width: 66%
     .tarif-card__item:nth-child(1)::after
-        left: 100px
+        // left: 100px
     .tarif-card__item:nth-child(3)::after
-        left: 30%
+        // left: 30%
         
     .questions-and-app__container 
         width: 109%;

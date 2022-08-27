@@ -130,7 +130,6 @@ const swiper = new Swiper('.swiper1', {
 
 //carousel2
 const swiper2 = new Swiper('.swiper2', {
-
     loop: true,
 
     // If we need pagination
