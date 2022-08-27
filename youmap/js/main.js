@@ -1,5 +1,5 @@
 
-slider()
+slider();
 
 async function slider() {
     let i = 0;
@@ -21,7 +21,7 @@ async function slider() {
         i = next;
         
     }
-}
+};
 
 const phone = document.querySelector('.right_part_img');
 
@@ -79,64 +79,81 @@ options.forEach((e) => {
 });
 
 
-//slider-dots
+const carousel = document.querySelector(".carousel1");
+const pagination = document.querySelector(".swiper-pagination1");
 
-const imgSliderright = document.querySelector(".project__carousel-right")
-const dotsRight = document.querySelector(".carousel_dots-container-right")
-
-const dotsLeft = document.querySelector(".carousel_dots-container-left")
-const imgSliderLeft = document.querySelector(".project__carousel-left")
-
-
-// document.querySelectorAll('.project__carousel').forEach((element) => {
-//     element.addEventListener('mouseenter', function () {
-//         dots.classList.add('dot-translate');
-//     });
-// });
-
-// document.querySelectorAll('.project__carousel').forEach((element) => {
-//     element.addEventListener('mouseleave', function () {
-//         dots.classList.remove('dot-translate');
-//     });
-// });
-
-
-// imgSliderright.addEventListener('mouseover', addDots);
-// function addDots(){
-//     dotsRigh.classList.add('dot-translate')
-// }
-
-
-// imgSliderright.addEventListener('mouseleave', removeDots);
-// function removeDots(){
-//     dotsRight.classList.remove('dot-translate')
-// }
-
-
-// mouseover
-
-
-
-imgSliderLeft.addEventListener('mouseover', addDots);
+carousel.addEventListener('mouseover', addDots);
 function addDots(){
-    dotsLeft.classList.add('dot-translate-one')
-}
+    pagination.classList.add('dot-translate');
+};
 
-
-imgSliderLeft.addEventListener('mouseleave', removeDots);
+carousel.addEventListener('mouseleave', removeDots);
 function removeDots(){
-    dotsLeft.classList.remove('dot-translate-one')
-}
+    pagination.classList.remove('dot-translate');
+};
 
 
 
+const carousel2 = document.querySelector(".carousel2");
 
+const pagination2 = document.querySelector(".swiper-pagination2");
+console.log(pagination2)
 
+carousel2.addEventListener('mouseover', addDots2);
+function addDots2(){
+    pagination2.classList.add('dot-translate');
+};
+
+carousel2.addEventListener('mouseleave', removeDots2);
+function removeDots2(){
+    pagination2.classList.remove('dot-translate');
+};
+
+//carousel1
+const swiper = new Swiper('.swiper1', {
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination1',
+        type: 'bullets',
+        clickable: true,
+    //   dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
+    },
+
+    });
+
+//carousel2
+const swiper2 = new Swiper('.swiper2', {
+
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination2',
+        type: 'bullets',
+        clickable: true,
+    //   dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+    },
+
+    });
+    
 //accordion
 
 
 const accordionContents = document.getElementsByClassName("accordion__content");
-for (i = 0; i < accordionContents.length; i++) {
+for (let i = 0; i < accordionContents.length; i++) {
     accordionContents[i].addEventListener("click", function () {
     this.classList.toggle("active");
     });
@@ -144,3 +161,7 @@ for (i = 0; i < accordionContents.length; i++) {
 
 
 const plus = document.getElementsByClassName("img-plus");
+
+
+
+//tarif
